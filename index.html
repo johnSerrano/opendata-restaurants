@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SF Food Safety</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="spinner.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <style>
+    .container {
+      max-width: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <div class="sk-folding-cube" id="spinner">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <div class="row text-center" id="main">
+
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="modaltitle">Modal Header</h4>
+          </div>
+          <div class="modal-body" id="modalbody">
+            <div class="panel-group">
+              <div class="panel panel-danger">
+                <div class="panel-heading">High Risk</div>
+                <div class="panel-body" id="high">
+                </div>
+              </div>
+              <div class="panel panel-warning">
+                <div class="panel-heading">Moderate Risk</div>
+                <div class="panel-body" id="med">
+                </div>
+              </div>
+              <div class="panel panel-info">
+                <div class="panel-heading">Low Risk</div>
+                <div class="panel-body" id="low">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+
+</html>
