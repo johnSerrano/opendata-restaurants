@@ -27,6 +27,9 @@ function get_location(response_json) {
 
 function parse_data(lat, long, response_json) {
   var businesses = getBusinesses(lat, long, response_json);
+
+  var spinner = document.getElementById("spinner");
+  spinner.style.display="none";
   for (var i = 0; i < 32; i++) {
     addItemToDOM(businesses[i]);
   }
