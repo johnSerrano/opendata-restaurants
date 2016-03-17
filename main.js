@@ -21,7 +21,10 @@ function get_location(response_json) {
     },
     function(err) {
       console.log(err);
-      //parse_data(37.79227, -122.39941, response_json);
+      var spinner = document.getElementById("spinner");
+      spinner.style.display="none";
+      var locationinfo = document.getElementById("location-info");
+      locationinfo.innerHTML="<p>There was an error getting your location data. You might need to give the site permission in your browser settings.</p>";
     });
 }
 
@@ -30,6 +33,8 @@ function parse_data(lat, long, response_json) {
 
   var spinner = document.getElementById("spinner");
   spinner.style.display="none";
+  var locationinfo = document.getElementById("location-info");
+  locationinfo.style.display="none";
   for (var i = 0; i < 32; i++) {
     addItemToDOM(businesses[i]);
   }
