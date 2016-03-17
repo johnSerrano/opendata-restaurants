@@ -1,0 +1,6 @@
+Lists San Francisco restaurants near you with their health-and-safety food
+score, along with all violations recorded during their last review.
+
+See it here: http://johnserrano.github.io/opendata-restaurants/
+
+This project utilizes SF Open Data. https://data.sfgov.org/data
