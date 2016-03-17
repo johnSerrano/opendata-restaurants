@@ -110,11 +110,11 @@ function sort_key(obj, obj2) {
 function addItemToDOM(restaurant) {
   var main = document.getElementById("main");
   var cell = document.createElement("div");
-  cell.className = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
+  cell.className = "col-xs-12 col-sm-12 col-md-6 col-lg-6";
   var panel = document.createElement("div");
-  panel.className = "panel panel-info";
+  panel.className = "panel panel-info restaurant";
   var panelheading = document.createElement("div");
-  panelheading.className = "panel-heading";
+  panelheading.className = "panel-heading restaurant-head";
   var heading = document.createElement("h2");
   heading.innerHTML = restaurant.name;
   var address = document.createElement("p");
